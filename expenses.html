@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses</title>
+    <link rel="stylesheet" href="dashboardExpensesStyle.css">
+</head>
+<body>
+    <div class="mainGrid">
+        <header>
+            <div class="logo">
+                AMPlify...
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Expenses</a></li>
+                    <li><a href="#">Expenditure</a></li>
+                    <li><a href="#">New user</a></li>
+                    <li><a href="#">Log out</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <aside>
+                <div class="profile">
+                    
+                </div>
+                <div class="helplines">
+
+                </div>
+            </aside>
+            <section>
+                <div class="currentMonth">
+                    <p>
+                        month: "CURRENT MONTH"
+                    </p>
+                </div>
+                <div class="expensesForm">
+                    <!-- <div class="expensesType">
+                        <button>
+                            Type of Expenses
+                        </button>
+                        <div class="expensesList">
+                            <p>Water Bookings</p>
+                            <p>Water Readings</p>
+                            <p>Electricity</p>
+                            <p>Septic tank Cleaning</p>
+                            <p>Staff Salary</p>
+                            <p>Corpus Funds</p>
+                            <p>Miscellaneous Expenses</p>
+                        </div>
+                    </div> -->
+                    <form method="POST">
+                        <div class="selectField">
+                            <select>
+                                <option value="dummy">Type of expenses</option>
+                                <option value="waterBooings">Water Bookings</option>
+                                <option value="waterReadings">Water Readings</option>
+                                <option value="electricity">Electricity</option>
+                                <option value="septicTankCleaning">Septic tank Cleaning</option>
+                                <option value="staffSalary">Staff Salary</option>
+                                <option value="corpusFunds">Corpus Funds</option>
+                                <option value="miscellaneous">Miscellaneous Expenses</option>
+                            </select>
+                        </div>
+                        <div class="dateField">
+                            <!-- <label>When ?</label> -->
+                            <input type="date" required>
+                        </div>
+                        <div class="textField">
+                            <input type="text" placeholder="Who paid ?" required>
+                        </div>
+                        <div class="textField">
+                            <input type="text" placeholder="How much ?" required>
+                        </div>
+                        <div class="textField">
+                            <input type="text" placeholder="Description (if applicable)">
+                        </div>
+                        <div class="submitField">
+                            <input type="submit" value="Update">
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            &copy; AMPlify, by Team 2.
+        </footer>
+    </div>
+</body>
+</html>
